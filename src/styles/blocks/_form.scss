@@ -1,0 +1,125 @@
+@import "../base/fonts";
+
+.form {
+  font-family: "Arial";
+  color: #222222;
+  line-height: 14px;
+  display: grid;
+  grid-template-columns: 226px 226px 226px;
+  grid-template-rows: 50px 120px;
+  gap: 20px 30px;
+  grid-template-areas:
+    "name email select"
+    "text text text";
+
+  input {
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    outline: none;
+  }
+
+  &__name {
+    position: relative;
+    grid-area: name;
+    font-size: 14px;
+
+    label {
+      position: absolute;
+      color: #777777;
+      left: 19px;
+      top: 8px;
+    }
+
+    input {
+      padding: 26px 0 9px 19px;
+
+      &:focus + &:label {
+        display: none;
+      }
+
+      &:focus::placeholder {
+        transform: translateY(-14px);
+      }
+    }
+  }
+  &__email {
+    grid-area: email;
+
+    input {
+      padding: 18px 0 18px 20px;
+    }
+  }
+  &__select {
+    grid-area: select;
+    position: relative;
+
+    select {
+      position: relative;
+      width: 226px;
+      height: 50px;
+    }
+
+    img {
+      position: absolute;
+      top: 22px;
+      right: 20px;
+    }
+  }
+  &__text {
+    grid-area: text;
+
+    textarea {
+      overflow: hidden;
+      width: 738px;
+      height: 120px;
+      padding: 15px 0px 91px 19px;
+      resize: none;
+      outline: none;
+      background: #ffffff;
+      color: #222222;
+      line-height: 14px;
+      border: 1px solid #e6e6e6;
+      border-radius: 6px;
+
+      &::placeholder {
+        font-family: "Arial";
+        color: #777777;
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+  }
+  button {
+    width: 226px;
+    height: 44px;
+    background: #0062ff;
+    border-radius: 2px;
+    border: none;
+    color: #ffffff;
+    font-family: "Arial";
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 767px) {
+  .form {
+    grid-template-columns: 280px;
+    grid-template-rows: 50px 50px 50px 120px;
+    gap: 10px 0px;
+    grid-template-areas:
+      "name"
+      "email"
+      "select"
+      "text";
+
+    button {
+      width: 280px;
+    }
+  }
+}

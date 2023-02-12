@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test task</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__title">
+        <div class="header__line">
+          <p></p>
+        </div>
+        <h1 class="header__title -text">Путь JavaScript</h1>
+        <div class="header__line">
+          <p></p>
+        </div>
+      </div>
+      <div class="header__box">
+        <div class="header__img">
+          <div class="header__img -date">
+            <p>12 <img src="../src/assets/img/triangle.svg" /></p>
+            <p class="header__img -month">Апреля</p>
+          </div>
+          <div class="header__img -image">
+          <img src="../src/assets/img/books.png" />
+          </div>
+        </div>
+        <div class="header__description">
+          <p>Можно выделить три основных направления для прогресса JavaScript</p>
+        </div>
+        <div class="header__line -long">
+          <p></p>
+        </div>
+      </div>
+      
+    </header>
+    <section class="content">
+      <div class="description block">
+        <div class="description__title title">Серверный JavaScript</div>
+        <div class="description__block">
+          <img src="../src/assets/img/quote.svg" />
+          <p class="description__block -quote text">
+            Разработчики и клиенты часто неправильно понимают, что такое
+            система. Они видят графический интерфейс и думают, что он и есть
+            система. Они определяют систему в терминах графического интерфейса и
+            считают, что должны сразу начать работу с графическим интерфейсом.
+            Они не понимают важнейшего принципа: ввод/вывод не важен.
+          </p>
+          <p class="description__block -autor text">— Р. Мартин</p>
+        </div>
+      </div>
+      <div class="ad">
+        <div class="ad__block block">
+          <p class="ad__name">Реклама на <span>blabla.com</span></p>
+          <img src="../src/assets/img/ad.png" />
+        </div>
+      </div>
+      <div class="conclusion block">
+        <div class="conclusion__title title">Заключение</div>
+        <div class="conclusion__description">
+          Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое
+          устройство диссонирует лирический субъект. Абстрактное высказывание
+          пространственно просветляет деструктивный символ. Ямб, несмотря на то,
+          что все эти характерологические черты отсылают не к единому образу
+          нарратора, интегрирует мифопоэтический хронотоп. Действительно,
+          ударение приводит палимпсест. Контрапункт приводит ритм.
+        </div>
+      </div>
+      <div class="review">
+        <div class="review__block block">
+          <div class="review__title">Оцените статью</div>
+          <div class="review__box">
+            <div class="review__rating rating">
+              <input type="radio" id="star-5" name="rating" value="5" />
+              <label for="star-5" title="Оценка «5»">
+                <img src="../src/assets/img/star.svg" />
+              </label>
+              <input type="radio" id="star-4" name="rating" value="4" />
+              <label for="star-4" title="Оценка «4»">
+                <img src="../src/assets/img/star.svg" />
+              </label>
+              <input type="radio" id="star-3" name="rating" value="3" />
+              <label for="star-3" title="Оценка «3»">
+                <img src="../src/assets/img/star.svg" />
+              </label>
+              <input type="radio" id="star-2" name="rating" value="2" />
+              <label for="star-2" title="Оценка «2»">
+                <img src="../src/assets/img/star.svg" />
+              </label>
+              <input type="radio" id="star-1" name="rating" value="1" />
+              <label for="star-1" title="Оценка «1»">
+                <img src="../src/assets/img/star.svg" />
+              </label>
+            </div>
+          </div>
+          <div class="review__title -sub">Добавить комментарий к книге</div>
+          <form class="form">
+            <div class="form__name">
+              <label>Имя</label>
+              <input type="text"/>
+            </div>
+            <div class="form__email">
+              <input placeholder="E-mail" type="text"/>
+            </div>
+            <div class="form__select">
+             <div class="selector">
+              <span class="selector__select">Выберите книгу</span>
+             </div>
+             <ul class="selector__menu">
+              <li>Javascript ниндзя</li>
+              <li>Pragmatic Guide to Javascript</li>
+              <li>Pro Javascript Techniques</li>
+              <li>Выразительный Javascript</li>
+             </ul>
+              <img src="../src/assets/img/arrow-down.svg"/>
+            </div>
+            <div class="form__text">
+              <textarea placeholder="Ваш отзыв"></textarea>
+            </div>
+            <button>Отправить</button>
+          </form>
+          </div>
+        </div>
+      </div>
+      <div class="similar block">
+        <div class="similar__title title">Похожие посты</div>
+        <div class="similar__posts">
+          <div class="similar__post">
+            <img src="../src/assets/img/react.png" />
+            <p>События жизненного цикла ReactJS</p>
+          </div>
+          <div class="similar__post">
+            <img src="../src/assets/img/grids.png" />
+            <p>CSS Grids. Полное руководство</p>
+          </div>
+          <div class="similar__post -last">
+            <img src="../src/assets/img/js.png" />
+            <p>Асинхронность в JavaScript</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./bundle.js"></script>
+  </body>
+</html>

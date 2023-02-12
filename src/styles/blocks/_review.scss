@@ -1,0 +1,57 @@
+@import "../base/fonts";
+
+.review {
+  height: 450px;
+  background-color: $greyblock-color;
+
+  &__title {
+    padding: 40px 0 10px 0;
+    font-family: "Consolas";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #202326;
+
+    &.-sub {
+      padding: 0;
+      padding-bottom: 15px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+  }
+
+  &__fields {
+    &.-fourth {
+      width: 738px;
+      height: 120px;
+    }
+  }
+
+  &__inputs {
+    display: flex;
+
+    &.-first {
+      width: 226px;
+      height: 50px;
+    }
+    &.-second {
+      width: 226px;
+      height: 50px;
+    }
+    &.-third {
+      width: 226px;
+      height: 50px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .review {
+    height: 540px;
+  }
+}

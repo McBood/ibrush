@@ -1,0 +1,16 @@
+@import "../base/fonts";
+
+.title {
+  font-family: "Consolas";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  color: #000000;
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 23px;
+  }
+}

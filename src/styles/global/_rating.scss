@@ -1,0 +1,40 @@
+.rating {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+  input {
+    display: none;
+  }
+
+  label {
+    cursor: pointer;
+    position: relative;
+    color: transparent;
+    padding-right: 10px;
+    &:before {
+      content: url("../assets/img/star-active.svg");
+      position: absolute;
+      opacity: 0;
+    }
+    &:hover::before,
+    &:hover ~ ::before {
+      opacity: 1 !important;
+    }
+    &:hover ~ ::before {
+      opacity: 1 !important;
+    }
+  }
+  input:checked + label:before,
+  input:checked ~ label:before {
+    opacity: 1;
+  }
+}
+.rating:hover input:checked ~ label:before {
+  opacity: 0.5;
+}
+
+.rating input:checked ~ label:before {
+  opacity: 1;
+}
+
+

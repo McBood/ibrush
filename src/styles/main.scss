@@ -1,0 +1,21 @@
+// Base
+@import "./base/base";
+@import "./base/fonts";
+@import "./base/reset";
+@import "./base/vars";
+
+// Global
+@import "./global/content";
+@import "./global/title";
+@import "./global/text";
+@import "./global/rating";
+
+// Blocks
+@import "./blocks/header";
+@import "./blocks/description";
+@import "./blocks/ad";
+@import "./blocks/conclusion";
+@import "./blocks/review";
+@import "./blocks/form";
+@import "./blocks/selector";
+@import "./blocks/similar";

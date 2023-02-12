@@ -1,0 +1,11 @@
+.block {
+  max-width: 739px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 767px) {
+  .block {
+    padding: 0 20px 0 20px;
+  }
+}

@@ -1,0 +1,29 @@
+.similar {
+  &__title {
+    color: #272522;
+    opacity: 0.6;
+    padding: 63px 0 40px 0;
+  }
+
+  &__posts {
+    display: flex;
+  }
+
+  &__post {
+    padding-right: 30px;
+
+    p {
+      padding: 20px 0 75px 0;
+      font-family: "Consolas";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      color: #272522;
+    }
+
+    &.-last {
+      padding-right: 0;
+    }
+  }
+}

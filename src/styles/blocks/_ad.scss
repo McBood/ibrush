@@ -1,0 +1,32 @@
+.ad {
+  background-color: $greyblock-color;
+  margin-top: 48px;
+  height: 305px;
+
+  &__block {
+    padding-left: 58px;
+  }
+
+  &__name {
+    padding: 34px 0 17px 0;
+    font-family: "Helvetica";
+
+    span {
+      color: #0035ff;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .ad {
+    &__block {
+      overflow: hidden;
+      padding-left: 20px;
+      img {
+        width: 280px;
+        height: 200px;
+      }
+    }
+  }
+}
