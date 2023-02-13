@@ -6,7 +6,10 @@
   &__box {
     display: flex;
     flex-direction: column;
-    padding-left: 58px;
+  }
+
+  &__block {
+    margin-left: auto;
   }
 
   &__name {
