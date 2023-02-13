@@ -1,22 +1,32 @@
 .conclusion {
-  height: 305px;
+  min-height: 310px;
 
   &__title {
     padding: 47px 0 26px 0;
   }
 
   &__description {
-    font-family: "ArialMT";
+    max-height: 200px;
+    font-family: "Arial";
     font-size: 16px;
     line-height: 24px;
     color: #202326;
+    margin-bottom: 30px;
+
+    p {
+      word-wrap: break-word;
+    }
   }
 }
 
 @media (max-width: 767px) {
   .conclusion {
+    &__title {
+      padding: 21px 0 21px 0;
+    }
     &__description {
       font-size: 14px;
+      line-height: 18px;
     }
   }
 }

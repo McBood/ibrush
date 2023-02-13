@@ -53,5 +53,16 @@
 @media (max-width: 767px) {
   .review {
     height: 540px;
+    &__box {
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__title {
+      text-align: center;
+      &.-sub {
+        text-align: center;
+      }
+    }
   }
 }

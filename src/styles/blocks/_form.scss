@@ -118,7 +118,13 @@
       "select"
       "text";
 
+    justify-content: center;
+
     button {
+      width: 280px;
+    }
+
+    textarea {
       width: 280px;
     }
   }

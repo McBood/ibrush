@@ -53,6 +53,20 @@
   &__img {
     position: relative;
 
+    &.-image {
+      overflow: auto;
+
+      &::-webkit-scrollbar {
+        height: 4px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #0062ff;
+      }
+      &::-webkit-scrollbar-track {
+        background-color: #e6e6e6;
+      }
+    }
+
     &.-date {
       position: absolute;
       display: flex;
@@ -117,6 +131,7 @@
 
       &.-image {
         width: 100%;
+        padding: 0px 20px 0px 20px;
       }
     }
 

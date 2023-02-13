@@ -1,0 +1,85 @@
+.slider-container {
+  display: flex;
+}
+
+.slider-title {
+  padding: 63px 0 40px 0;
+  font-family: "Consolas";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 28px;
+  color: #272522;
+  opacity: 0.6;
+}
+
+.slider p {
+  font-family: "Consolas";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #272522;
+  padding-top: 20px;
+}
+
+.slider-slide {
+  padding-right: 30px;
+}
+
+.slider-last {
+  padding-right: 0;
+}
+
+@media (max-width: 767px) {
+  .slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider-slide {
+    padding-right: 0;
+  }
+
+  .slider-title {
+    padding: 36px 0 24px 0;
+  }
+  .slider-block {
+    width: 226px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+  .slider-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 300%;
+    height: 300px;
+    transition: 0.4s ease-in-out;
+  }
+
+  .slider-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0 20px 0;
+  }
+
+  .slider-pagination span {
+    background: #cccccc;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .slider-pagination .active {
+    background: $blue-color;
+    width: 15px;
+    height: 15px;
+  }
+}

@@ -27,3 +27,27 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .similar {
+    &__title {
+      text-align: center;
+    }
+    &__posts {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__post {
+      padding-right: 0;
+
+      p {
+        max-width: 210px;
+        padding: 15px 0px 0px 0px;
+      }
+
+      img {
+      }
+    }
+  }
+}
