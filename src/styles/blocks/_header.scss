@@ -58,6 +58,7 @@
 
       &::-webkit-scrollbar {
         height: 4px;
+        width: 0%;
       }
       &::-webkit-scrollbar-thumb {
         background-color: #0062ff;
@@ -131,7 +132,6 @@
 
       &.-image {
         width: 100%;
-        padding: 0px 20px 0px 20px;
       }
     }
 
